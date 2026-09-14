@@ -3,50 +3,40 @@
 <head>
     <title>Lucky Home Service</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #f5f7ff;
             color: #222;
+            text-align: center;
         }
 
         header {
             background: #6c5ce7;
             color: white;
-            text-align: center;
             padding: 30px 15px;
         }
 
         header img {
             width: 180px;
-            max-width: 80%;
             border-radius: 15px;
-        }
-
-        header h1 {
-            margin: 15px 0 8px;
         }
 
         nav {
             background: white;
-            text-align: center;
-            padding: 18px 10px;
-            box-shadow: 0 2px 8px #ddd;
+            padding: 18px;
         }
 
         nav a {
             text-decoration: none;
             color: #6c5ce7;
             font-weight: bold;
-            margin: 10px 15px;
+            margin: 12px;
         }
 
         .hero {
-            text-align: center;
-            padding: 55px 20px;
+            padding: 50px 20px;
         }
 
         .hero h2 {
@@ -54,7 +44,6 @@
         }
 
         .services {
-            text-align: center;
             padding: 35px 20px;
         }
 
@@ -75,15 +64,284 @@
             color: #6c5ce7;
         }
 
-        .about,
-        .contact {
+        .about, .contact, .reviews {
             background: white;
-            text-align: center;
             padding: 40px 20px;
             margin-top: 20px;
         }
 
-        input,
-        select,
-        textarea {
+        .review {
+            display: inline-block;
+            background: #f5f7ff;
+            width: 250px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #ddd;
+        }
+
+        .call {
+            display: inline-block;
+            background: #0984e3;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 8px;
+        }
+
+        input, select, textarea {
             width: 80%;
+            max-width: 400px;
+            padding: 12px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #6c5ce7;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header img {
+                width: 140px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .box,
+            .review {
+                width: 80%;
+                margin: 10px auto;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Lucky Home Service Logo">
+
+    <h1>Lucky Home Service</h1>
+
+    <p>Data Entry & Online Services</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+
+    <h2>Welcome 👋</h2>
+
+    <p>
+        Reliable computer and online services from home.
+    </p>
+
+    <a class="whatsapp"
+       href="https://wa.me/91XXXXXXXXXX"
+       target="_blank">
+       💬 WhatsApp Now
+    </a>
+
+    <a class="call"
+       href="tel:+91XXXXXXXXXX">
+       📞 Call Now
+    </a>
+
+</section>
+
+<section class="services" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="box">
+        <h3>📝 Data Entry</h3>
+        <p>Simple and accurate data entry work.</p>
+        <strong>₹150 / hour</strong>
+    </div>
+
+    <div class="box">
+        <h3>📄 Online Form Filling</h3>
+        <p>Assistance with online forms.</p>
+        <strong>₹100 / form</strong>
+    </div>
+
+    <div class="box">
+        <h3>💻 Computer Work</h3>
+        <p>Basic computer related work.</p>
+        <strong>₹200 / task</strong>
+    </div>
+
+    <div class="box">
+        <h3>🌐 Basic Website Design</h3>
+        <p>Simple website creation.</p>
+        <strong>₹500 / website</strong>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About Us</h2>
+
+    <p>
+        Lucky Home Service provides simple and reliable
+        computer and online services from home.
+    </p>
+
+</section>
+
+<section class="reviews" id="reviews">
+
+    <h2>⭐ Customer Reviews</h2>
+
+    <div class="review">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>Good and reliable service.</p>
+    </div>
+
+    <div class="review">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>Website work was completed nicely.</p>
+    </div>
+
+    <div class="review">
+        <h3>⭐⭐⭐⭐⭐</h3>
+        <p>Fast and helpful service.</p>
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>📋 Customer Request</h2>
+
+    <form onsubmit="sendWhatsApp(); return false;">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required>
+        <br>
+
+        <select id="service" required>
+
+            <option value="">Select Service</option>
+
+            <option>Data Entry</option>
+
+            <option>Online Form Filling</option>
+
+            <option>Computer Work</option>
+
+            <option>Basic Website Design</option>
+
+        </select>
+        <br>
+
+        <textarea
+            id="message"
+            placeholder="Write your requirement"
+            required></textarea>
+        <br>
+
+        <button type="submit">
+            💬 Send Request on WhatsApp
+        </button>
+
+    </form>
+
+    <br>
+
+    <p>📱 WhatsApp: Your Number</p>
+    <p>📧 Email: Your Email</p>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Lucky Home Service</p>
+
+</footer>
+
+<script>
+
+function sendWhatsApp() {
+
+    let name =
+        document.getElementById("name").value;
+
+    let service =
+        document.getElementById("service").value;
+
+    let message =
+        document.getElementById("message").value;
+
+    let text =
+        "Hello Lucky Home Service!%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Service: " + service + "%0A" +
+        "Requirement: " + message;
+
+    window.open(
+        "https://wa.me/919106885319?text=" + text,
+        "_blank"
+    );
+}
+
+</script>
+
+</body>
+</html>
