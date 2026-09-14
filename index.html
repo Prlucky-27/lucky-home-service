@@ -1,38 +1,89 @@
-    <h2>📋 Customer Request</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lucky Home Service</title>
 
-    <form onsubmit="sendWhatsApp(); return false;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <input type="text" id="name" placeholder="Your Name" required><br><br>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7ff;
+            color: #222;
+        }
 
-        <select id="service" required>
-            <option value="">Select Service</option>
-            <option>Data Entry</option>
-            <option>Online Form Filling</option>
-            <option>Computer Work</option>
-            <option>Basic Website Design</option>
-        </select><br><br>
+        header {
+            background: #6c5ce7;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
 
-        <textarea id="message" placeholder="Write your requirement" required></textarea><br><br>
+        header img {
+            width: 180px;
+            max-width: 80%;
+            border-radius: 15px;
+        }
 
-        <button type="submit">💬 Send Request on WhatsApp</button>
+        header h1 {
+            margin: 15px 0 8px;
+        }
 
-    </form>
-</section>
+        nav {
+            background: white;
+            text-align: center;
+            padding: 18px 10px;
+            box-shadow: 0 2px 8px #ddd;
+        }
 
-<script>
-function sendWhatsApp() {
+        nav a {
+            text-decoration: none;
+            color: #6c5ce7;
+            font-weight: bold;
+            margin: 10px 15px;
+        }
 
-    let name = document.getElementById("name").value;
-    let service = document.getElementById("service").value;
-    let message = document.getElementById("message").value;
+        .hero {
+            text-align: center;
+            padding: 55px 20px;
+        }
 
-    let text = "Hello Lucky Home Service!%0A%0A"
-             + "Name: " + name + "%0A"
-             + "Service: " + service + "%0A"
-             + "Requirement: " + message;
+        .hero h2 {
+            font-size: 35px;
+        }
 
-    window.open("https://wa.me/919106885319?text=" + text, "_blank");
-}
-</script>
-<section class="contact" id="contact">
-    
+        .services {
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .box {
+            display: inline-block;
+            vertical-align: top;
+            background: white;
+            width: 220px;
+            min-height: 170px;
+            margin: 10px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 3px 12px #ccc;
+        }
+
+        .box strong {
+            font-size: 20px;
+            color: #6c5ce7;
+        }
+
+        .about,
+        .contact {
+            background: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 20px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 80%;
