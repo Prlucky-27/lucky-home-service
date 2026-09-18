@@ -328,12 +328,12 @@ function sendInquiry() {
     let service = document.querySelector('select').value;
     let message = document.querySelector('textarea').value;
 
-    let text = "Hello, I want to make an inquiry.%0A%0A"
-             + "Name: " + encodeURIComponent(name) + "%0A"
-             + "Service: " + encodeURIComponent(service) + "%0A"
-             + "Message: " + encodeURIComponent(message);
+    let text = "Hello, I want to make an inquiry.%0A"
+             + "Name: " + name + "%0A"
+             + "Service: " + service + "%0A"
+             + "Message: " + message;
 
-    window.location.href=("https://wa.me/919106885319?text="+text,"_blank");
+    window.location.href = "https://wa.me/919106885319?text=" + encodeURIComponent(text);
 }
 </script>
 </body>
