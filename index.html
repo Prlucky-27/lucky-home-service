@@ -308,9 +308,7 @@ nav a:hover {
 <textarea placeholder="Write your message"></textarea>
 
 <br><br>
-
-<a href="https://wa.me/919106885319?text=Hello%2C%20I%20want%20to%20make%20an%20inquiry." target="_blank">
-    <button>Send Inquiry</button>
+<button type="button"onclick="sendinquiry()">send inquiry</button>
 </a>
     <a class="whatsapp"
        href="https://wa.me/9106885319"
@@ -324,6 +322,19 @@ nav a:hover {
 <footer>
     <p>© 2026 Lucky Home Service - All Rights Reserved</p>
 </footer>
+<script>
+function sendInquiry() {
+    let name = document.querySelector('input[placeholder="Your Name"]').value;
+    let service = document.querySelector('select').value;
+    let message = document.querySelector('textarea').value;
 
+    let text = "Hello, I want to make an inquiry.%0A%0A"
+             + "Name: " + encodeURIComponent(name) + "%0A"
+             + "Service: " + encodeURIComponent(service) + "%0A"
+             + "Message: " + encodeURIComponent(message);
+
+    window.open("https://wa.me/919106885319?text=" + text, "_blank");
+}
+</script>
 </body>
 </html>
